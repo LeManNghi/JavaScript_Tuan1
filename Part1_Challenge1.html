@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cau 1</title>
-    <script src="Cau1.js"></script>
+    <title>Part 1 - Challenge 1</title>
+    <script>
+        let MarkMass = 78;
+        let MarkHeight = 1.69;
+        let MarkBMI = MarkMass/(MarkHeight**2);
+
+        let JohnMass = 92;
+        let JohnHeight = 1.95;
+        let JohnBMI = JohnMass/(JohnHeight**2);
+
+        console.log("Data 1")
+        console.log("Mark's BMI: "+MarkBMI);
+        console.log("John's BMI: "+JohnBMI);
+
+        MarkMass = 95;
+        MarkHeight = 1.88;
+        MarkBMI = MarkMass/(MarkHeight**2);
+
+        JohnMass = 85;
+        JohnHeight = 1.76;
+        JohnBMI = JohnMass/(JohnHeight**2);
+
+        console.log("Data 2")
+        console.log("Mark's BMI: "+MarkBMI);
+        console.log("John's BMI: "+JohnBMI);
+
+        markHigherBMI = MarkBMI > JohnBMI;
+
+        if(markHigherBMI){
+            console.log("Mark has higher BMI than John")
+        } else {
+            console.log("John has higher BMI than Mark")
+        }
+    </script>
 </head>
 <body>
     
