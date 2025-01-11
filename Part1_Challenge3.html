@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cau 3</title>
+    <title>Part 1 - Challenge 3</title>
     <script>
+
         //Caculate the average score for each team
         avgDolphin = (96+108+89)/3;
         avgKoalas = (97+112+101)/3;
+
         //Compare the the team's avr=erage score
         if(avgDolphin > avgKoalas)
             console.log("Dolphin Win!");
@@ -15,6 +17,29 @@
             console.log("Koalas Win!");
         else
             console.log("Draw!");
+
+        //Bonus
+        avgDolphin = (97+112+101)/3;
+        avgKoalas = (109+95+123)/3;
+
+        //Bonus 1
+        if(avgDolphin > avgKoalas && avgDolphin >= 100)
+            console.log("Dolphin Win!");
+        else if (avgDolphin < avgKoalas && avgKoalas >= 100)
+            console.log("Koalas Win!");
+        else
+            console.log("Draw!");
+
+        //Bonus 2
+        if(avgDolphin > avgKoalas && avgDolphin >= 100)
+            console.log("Dolphin Win!");
+        else if (avgDolphin < avgKoalas && avgKoalas >= 100)
+            console.log("Koalas Win!");
+        else if(avgDolphin == avgKoalas && avgDolphin >= 100)
+            console.log("Draw!");
+        else
+            console.log("No team wins the trophy!");
+
     </script>
 </head>
 <body>
